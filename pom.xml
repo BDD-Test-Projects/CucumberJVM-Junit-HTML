@@ -76,7 +76,24 @@
                 <version>2.19.1</version>
             </plugin>
 
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>reporter.ReportGen</mainClass>
+                </configuration>
+            </plugin>
+
         </plugins>
+
 
 
     </build>

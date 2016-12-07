@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
 @RunWith(ExtendedCucumber.class)
 @ExtendedCucumberOptions(jsonReport = "target/cucumber.json",
         retryCount = 3,
-        detailedReport = true,
+        detailedReport = false,
         detailedAggregatedReport = false,
         overviewReport = true,
         coverageReport = false,
@@ -22,7 +22,6 @@ import org.junit.runner.RunWith;
         //excludeCoverageTags = {"@flaky" },
         includeCoverageTags = {"@Test" },
         outputFolder = "target/extended_report")
-
 
 @CucumberOptions(
         format = {"pretty", "html:target/cucumber", "json:target/cucumber.json"},
